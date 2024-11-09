@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddTaskActivity"
+    android:background="@color/light_green">
+
+    <TextView
+        android:id="@+id/addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/add_task"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap" />
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/done_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/addTask"
+        android:layout_marginEnd="6dp"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:hint="@string/enter_task_title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/addTask"
+        android:background="@drawable/border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:hint="@string/enter_task_description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_below="@id/title"
+        android:background="@drawable/border"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        tools:ignore="Autofill,TextFields" />
+    
+    <Spinner
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/description"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/priority_array"/>
+
+    <EditText
+        android:id="@+id/deadline"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:hint="@string/enter_task_deadline"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/priority"
+        android:background="@drawable/border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        android:focusable="false"
+        tools:ignore="Autofill,TextFields" />
+
+</RelativeLayout>

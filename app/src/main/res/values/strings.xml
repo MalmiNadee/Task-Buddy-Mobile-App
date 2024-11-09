@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Task Buddy</string>
+    <string name="add_task">Add Task</string>
+    <string name="enter_task_title">Enter Task Title</string>
+    <string name="enter_task_description">Enter Task Description</string>
+    <string name="tasks">Tasks</string>
+    <string name="enter_task_deadline">Enter task deadline</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="priority">Priority</string>
+    <string name="deadline">Deadline</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="type_here_to_search">Type here to search</string>
+    <string-array name="priority_array">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>
